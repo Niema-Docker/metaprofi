@@ -4,6 +4,6 @@ MAINTAINER Niema Moshiri <niemamoshiri@gmail.com>
 
 # install MetaProFi
 RUN apk update && \
-    apk add bash g++ git lapack-dev linux-headers musl-dev openblas-dev py3-pip python3-dev && \
+    apk add bash g++ git lapack-dev linux-headers musl-dev openblas-dev py3-pip py3-yaml python3-dev && \
     pip3 install --no-cache-dir git+https://github.com/kalininalab/metaprofi.git && \
     rm -rf /tmp/*
